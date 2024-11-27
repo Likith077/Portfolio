@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import Image from 'next/image';
 
 const projects = [
   {
@@ -84,10 +85,12 @@ export function ProjectsSection() {
             >
               <Card className="overflow-hidden group">
                 <div className="aspect-video relative">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110 group-hover:opacity-90"
+                    width={500}
+                    height={300}
                   />
                 </div>
                 <div className="p-6">

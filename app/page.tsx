@@ -7,7 +7,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 
 export default function Home() {
   return (
-    <Router basename="/Portfolio">
+    
     <div className="container mx-auto px-4">
       <HeroSection />
       <AboutSection />
@@ -15,6 +15,6 @@ export default function Home() {
       <ServicesSection />
       <ContactSection />
       </div>
-    </Router>
+    
   );
 }

@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster"
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+        <Script 
+            src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" 
+            strategy="afterInteractive"
+        />
       </head>
       <body className={inter.className}>
         <ThemeProvider
