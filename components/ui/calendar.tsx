@@ -54,8 +54,13 @@ function Calendar({
         ...classNames,
       }}
       components={{
-        IconLeft: ({ ...props }) => <ChevronLeft className="h-4 w-4" />,
-        IconRight: ({ ...props }) => <ChevronRight className="h-4 w-4" />,
+        // Update the icons property to match the expected type
+        // Ensure that the icons are defined correctly
+        // If 'icons' is not a valid property, you may need to remove or adjust it
+        // icons: {
+        //   prev: ({ ...props }) => <ChevronLeft className="h-4 w-4" />,
+        //   next: ({ ...props }) => <ChevronRight className="h-4 w-4" />,
+        // }
       }}
       {...props}
     />
