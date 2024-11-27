@@ -8,6 +8,13 @@ import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
+// Add this declaration at the top of the file
+declare global {
+  interface Window {
+    Particles: any; // or a more specific type if known
+  }
+}
+
 const socialLinks = [
   {
     href: "https://github.com/Likith077",
@@ -59,35 +66,40 @@ export function HeroSection() {
     const initParticles = async () => {
       if (typeof window !== 'undefined') {
         try {
-          // @ts-ignore
-          await window.Particles.init({
-            selector: ".background",
-            color: ["#03dac6", "#ff0266", "#000000"],
-            connectParticles: true,
-            sizeVariations: 3,
-            maxParticles: 100,
-            speed: 0.5,
-            responsive: [{
-              breakpoint: 768,
-              options: {
-                maxParticles: 43,
-                connectParticles: false
-              }
-            }],
-            fullScreen: {
-              enable: true,
-              zIndex: -1
-            },
-            particles: {
-              number: {
-                value: 100,
-                density: {
-                  enable: true,
-                  value_area: 800
+          // Check if window.Particles is defined
+          if (window.Particles) {
+            // @ts-ignore
+            await window.Particles.init({
+              selector: ".background",
+              color: ["#03dac6", "#ff0266", "#000000"],
+              connectParticles: true,
+              sizeVariations: 3,
+              maxParticles: 100,
+              speed: 0.5,
+              responsive: [{
+                breakpoint: 768,
+                options: {
+                  maxParticles: 43,
+                  connectParticles: false
+                }
+              }],
+              fullScreen: {
+                enable: true,
+                zIndex: -1
+              },
+              particles: {
+                number: {
+                  value: 100,
+                  density: {
+                    enable: true,
+                    value_area: 800
+                  }
                 }
               }
-            }
-          });
+            });
+          } else {
+            console.error("Particles library is not loaded.");
+          }
         } catch (error) {
           console.error("Failed to initialize particles:", error);
         }
