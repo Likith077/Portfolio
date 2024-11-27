@@ -7,6 +7,7 @@ import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import Particles from "react-tsparticles";
 
 // Add this declaration at the top of the file
 declare global {
