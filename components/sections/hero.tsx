@@ -47,7 +47,7 @@ export function HeroSection() {
       color: { value:"#03dac6" },
       links: {
         enable: !isMobile,
-        color: ["#03dac6", "#ff0266", "#000000"],
+        color: ["#03dac6", "#ff0266"],
         distance: 150,
       },
       move: { enable: true, speed: 1 },
