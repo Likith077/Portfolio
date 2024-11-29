@@ -85,7 +85,7 @@ export function HeroSection() {
               <Button
                 size="default"
                 className="transition-transform hover:scale-105 hover:shadow-lg text-sm md:text-base"
-                onClick={() => router.push("/portfolio")}
+                onClick={() => router.push("#about")}
               >
                 View Portfolio
                 <ArrowRight className="ml-2 h-4 w-4" />
