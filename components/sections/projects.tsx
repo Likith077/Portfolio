@@ -11,7 +11,7 @@ const projects = [
  {
   title: "Career Navigator - AI-Powered Coding Interview Prep Platform",
   description:
-    "An AI-driven web platform that helps learners prepare for coding interviews through personalized question sets, mock tests, and real-time feedback.",
+    "An AI-driven web platform that helps learners prepare for coding interviews.",
   image: "career-navigator.png",
   technologies: ["Next.js", "TailwindCSS", "React", "JavaScript", "OpenAI API"],
   demo: "https://careernavigator-likith.vercel.app/",
