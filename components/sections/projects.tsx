@@ -8,6 +8,16 @@ import { ExternalLink, Github } from "lucide-react";
 import Image from 'next/image';
 
 const projects = [
+ {
+  title: "Career Navigator - AI-Powered Coding Interview Prep Platform",
+  description:
+    "An AI-driven web platform that helps learners prepare for coding interviews through personalized question sets, mock tests, and real-time feedback.",
+  image: "career-navigator.png",
+  technologies: ["Next.js", "TailwindCSS", "React", "JavaScript", "OpenAI API"],
+  demo: "https://careernavigator-likith.vercel.app/",
+  github: "https://github.com/Likith077/Career-Navigator",
+},
+
   {
     title: "Game Space",
     description:
