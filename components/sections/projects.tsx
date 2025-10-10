@@ -17,6 +17,15 @@ const projects = [
   demo: "https://careernavigator-likith.vercel.app/",
   github: "https://github.com/Likith077/Career-Navigator",
 },
+{
+    title: "Insurance Fraud Detection",
+    description:
+      "A system that predicts whether an insurance claim is fraudulent or not using machine learning.",
+    image: "fraud detection.jpeg",
+    technologies: ["Python", "Machine Learning", "Flask", "Keras",],
+    
+    github: "https://github.com/Likith077/Insurance-fraud-prediction-data-science.git",
+  },
 
   {
     title: "Game Space",
@@ -36,15 +45,7 @@ const projects = [
    
     github: "https://github.com/Likith077/Face-Recognition-Based-Attendance-System.git",
   },
-  {
-    title: "Insurance Fraud Detection",
-    description:
-      "A system that predicts whether an insurance claim is fraudulent or not using machine learning.",
-    image: "fraud detection.jpeg",
-    technologies: ["Python", "Machine Learning", "Flask", "Keras",],
-    
-    github: "https://github.com/Likith077/Insurance-fraud-prediction-data-science.git",
-  },
+  
   {
     title: "Weather Forecast",
     description:
