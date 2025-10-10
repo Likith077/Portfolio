@@ -11,7 +11,7 @@ const projects = [
  {
   title: "Career Navigator - AI-Powered Coding Interview Prep Platform",
   description:
-    "An AI-driven web platform that helps learners prepare for coding interviews.",
+    "An AI-driven web platform that helps learners prepare for interviews.",
   image: "career-navigator.png",
   technologies: ["Next.js", "TailwindCSS", "React", "JavaScript", "OpenAI API"],
   demo: "https://careernavigator-likith.vercel.app/",
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Game Space",
     description:
-      "A web application that allows users to browse and play games online for free.",
+      "A web application that allows users to browse and play games online free.",
     image: "game space.jpeg",
     technologies: ["Next.js", "TailwindCSS", "JavaScript", "React"],
     demo: "https://likith077.github.io/Game-Space/",
