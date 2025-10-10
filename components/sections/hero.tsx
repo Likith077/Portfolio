@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useEffect, useCallback, useState } from "react";
-import { Particles } from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import { Particles } from "react-tsparticles"; // updated import
+import { loadSlim } from "tsparticles-slim";
+import type { Engine } from "tsparticles-engine";
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
@@ -26,17 +28,13 @@ export function HeroSection() {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-
     handleResize();
     window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const particlesInit = useCallback(async (engine : any) => {
-    await loadFull(engine); // Ensure that all features of tsParticles are loaded
+  const particlesInit = useCallback(async (engine: Engine) => {
+    await loadSlim(engine);
   }, []);
 
   const particlesOptions = {
@@ -44,7 +42,7 @@ export function HeroSection() {
     background: { color: { value: "transparent" } },
     particles: {
       number: { value: 30 },
-      color: { value:"#03dac6" },
+      color: { value: "#03dac6" },
       links: {
         enable: !isMobile,
         color: ["#03dac6", "#ff0266"],
@@ -54,14 +52,13 @@ export function HeroSection() {
       size: { value: 3 },
     },
   };
-  
 
   return (
     <section className="relative min-h-screen w-full overflow-hidden hero-section">
       {!isMobile && (
         <Particles
           id="tsparticles"
-          init={particlesInit}
+          init={particlesInit} // ✅ TypeScript-safe
           options={particlesOptions}
           className="particles-bg absolute top-0 left-0 w-full h-full"
         />
@@ -75,8 +72,7 @@ export function HeroSection() {
             className="text-foreground pl-4 md:pl-0 -ml-6 md:-ml-10 md:-mt-24"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-left">
-              Building elegant solutions for{" "}
-              <span className="text-primary">web and software</span> challenges
+              Building elegant solutions for <span className="text-primary">web and software</span> challenges
             </h1>
             <p className="text-lg text-muted-foreground mb-8 text-left">
               Full Stack Developer specializing in creating robust and scalable applications with modern technologies.
