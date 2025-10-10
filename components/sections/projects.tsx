@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Game Space",
     description:
-      "A web application that allows users to browse and play games online free.",
+      "A web application that allows users to browse and play games online.",
     image: "game space.jpeg",
     technologies: ["Next.js", "TailwindCSS", "JavaScript", "React"],
     demo: "https://likith077.github.io/Game-Space/",
