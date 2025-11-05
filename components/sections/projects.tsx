@@ -17,16 +17,6 @@ const projects = [
   demo: "https://careernavigator-likith.vercel.app/",
   github: "https://github.com/Likith077/Career-Navigator",
 },
-{
-    title: "Insurance Fraud Detection",
-    description:
-      "A system that predicts whether an insurance claim is fraudulent or not using machine learning.",
-    image: "fraud detection.jpeg",
-    technologies: ["Python", "Machine Learning", "Flask", "Keras",],
-    
-    github: "https://github.com/Likith077/Insurance-fraud-prediction-data-science.git",
-  },
-
   {
     title: "Game Space",
     description:
@@ -37,16 +27,6 @@ const projects = [
     github: "https://github.com/Likith077/Game-Space",
   },
   {
-    title: "Face Recognition Attendance System",
-    description:
-      "A system that uses face recognition to mark attendance in a classroom.",
-    image: "face-recognition.jpeg",
-    technologies: ["Python", "OpenCV", "TensorFlow", "Computer Vision"],
-   
-    github: "https://github.com/Likith077/Face-Recognition-Based-Attendance-System.git",
-  },
-  
-  {
     title: "Weather Forecast",
     description:
       "A web application that allows users to view the weather forecast for a particular location.",
@@ -54,6 +34,24 @@ const projects = [
     technologies: ["React", "TailwindCSS", "JavaScript", "HTML", "CSS"],
     demo: "https://likith077-weather-forecast.vercel.app/",
     github: "https://github.com/Likith077/Weather-App.git",
+  },
+ {
+    title: "Insurance Fraud Detection",
+    description:
+      "A system that predicts whether an insurance claim is fraudulent or not using machine learning.",
+    image: "fraud detection.jpeg",
+    technologies: ["Python", "Machine Learning", "Flask", "Keras",],
+    
+    github: "https://github.com/Likith077/Insurance-fraud-prediction-data-science.git",
+  },
+ {
+    title: "Face Recognition Attendance System",
+    description:
+      "A system that uses face recognition to mark attendance in a classroom.",
+    image: "face-recognition.jpeg",
+    technologies: ["Python", "OpenCV", "TensorFlow", "Computer Vision"],
+   
+    github: "https://github.com/Likith077/Face-Recognition-Based-Attendance-System.git",
   },
   {
     title: "Todo List",
