@@ -117,7 +117,7 @@ export function HeroSection() {
             className="relative h-[300px] w-[300px] md:h-[600px] md:w-[600px] mx-auto -mt-16 md:-mt-24 mb-4 md:mb-0"
           >
             <Image
-              src="/profile.png"
+              src="/profile.jpg"
               alt="Profile Photo"
               fill
               className="object-cover rounded-full border-4 border-primary/10"
