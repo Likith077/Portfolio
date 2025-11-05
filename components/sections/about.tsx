@@ -6,10 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const skills = {
-  frontend: ["React", "Next.js", "JavaScript", "TailwindCSS", "TypeScript", "HTML", "CSS"],
-  backend: ["Python", "Django", "Node.js", "Express"],
-  database: ["MySQL","MongoDB",],
-  tools: ["Git","Linux", "AWS", "Windows"],
+  frontend: ["React", "Next.js", "JavaScript", "TailwindCSS", "HTML", "CSS"],
+  backend: ["Java", "Spring", "Node.js", "Django"],
+  database: ["MySQL","MongoDB", "SQLPlus"],
+  tools: ["Git","AWS", "Windows"],
 };
 
 const certifications = [
@@ -57,7 +57,7 @@ export function AboutSection() {
       >
         <h2 className="text-3xl font-bold mb-8">About Me</h2>
         <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
-          Hi I'm a Likith Nirvan passionate Full Stack Developer with a experience in buildingweb applications. I specialize in creating efficient, scalable, and
+          Hi I'm a Likith Nirvan passionate Full Stack Developer with a experience in building web applications. I specialize in creating efficient, scalable, and
           user-friendly solutions using modern technologies.
         </p>
 
