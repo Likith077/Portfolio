@@ -57,8 +57,7 @@ export function AboutSection() {
       >
         <h2 className="text-3xl font-bold mb-8">About Me</h2>
         <p className="text-lg text-muted-foreground mb-12 max-w-3xl">
-          Hi I'm a Likith Nirvan passionate Full Stack Developer with a experience in building
-          web applications. I specialize in creating efficient, scalable, and
+          Hi I'm a Likith Nirvan passionate Full Stack Developer with a experience in buildingweb applications. I specialize in creating efficient, scalable, and
           user-friendly solutions using modern technologies.
         </p>
 
