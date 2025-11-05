@@ -89,7 +89,7 @@ export function HeroSection() {
               <Button
                 size="default"
                 variant="outline"
-                onClick={() => window.open("/resume.pdf", "_blank")}
+                onClick={() => window.open("/Resume.pdf", "_blank")}
                 className="transition-transform hover:scale-105 hover:shadow-lg text-sm md:text-base"
               >
                 Download Resume
